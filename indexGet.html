@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Monstro verde</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="http://localhost:35729/livereload.js"></script>
+</head>
+<body>
+	<form action="http://terrivel.herokuapp.com/monster" method="get">
+		<fieldset>
+			<div id="informacoesbasicas">
+				<label> Nome:
+					<input id ="texto1" name="nome" type="text">
+				</label>
+				<label> Número de pedras:
+					<input id ="texto2" name="num_pedras" type="number" min="0">
+				</label>
+				<label> Tamanho de pedras:
+					<input id ="texto3" name="tam_pedras" type="number" step="0.5" min="1" max = "7">
+				</label>
+			</div>
+		</fieldset>
+		<fieldset>
+			<div id ="informacoesadicionais">
+				<div class="linha">
+					<label class="coluna"> Cor do céu 1:
+						<input class ="coluna" name="corCeu1"type="color">
+					</label>
+				</div>
+				<div class="linha">
+					<label class="coluna"> Cor do céu 2:
+						<input class="coluna" name="corCeu2"type="color">
+					</label>
+				</div>
+				<div class="linha">
+					<label class = "coluna"for="tipo_pedras">Tipo de pedras:</label>
+						<select class="coluna"name="tipo_pedras" id="tipo_pedras">
+							<option value = "marroada">Marroada</option>
+							<option value = "ametista">Ametista</option>
+							<option value = "topazio">Topazio</option>
+							<option value = "espinela">Espinela</option>
+						</select>
+				</div>
+				<div class="linha">
+					<label for="tipo_pedras_sortidas">Tipos de pedras sortidas:</label>
+						<input name="tipo_pedras_sortidas" type="radio" value="sim">Sim
+						<input name="tipo_pedras_sortidas" type="radio" value="nao">Não
+				</div>
+			</div>
+		</fieldset>
+		<input type="submit" value="Enviar">	
+	</form>
+</body>
+</html>
