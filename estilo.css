@@ -1,0 +1,39 @@
+#informacoesbasicas{
+	display:table;
+}
+
+#informacoesbasicas label{
+	display:table-row;
+}
+
+#informacoesadicionais{
+	display: table;
+}
+
+
+
+#texto1{
+	margin-left: 90px;
+	width: 300px;
+}
+
+#texto2{
+	margin-left: 12px;
+}
+
+#texto3{
+	margin-left: 4px;
+	
+}
+
+#tipo_pedras{
+
+}
+
+.linha{
+	display:table-row;
+}
+
+.coluna{
+	display:table-cell;
+}
